@@ -3,9 +3,8 @@ namespace Controller;
 
 use Myfm\Controller as Controller;
 
-class HelloController extends Controller{
+class UserController extends Controller{
 	public function main(){
-		echo "Hello Myfm";
-		
+		var_dump($this->_params);
 	}
 }

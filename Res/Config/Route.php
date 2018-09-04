@@ -1,5 +1,14 @@
 <?php
 return array(
-	'DEFAULT_CONTROLLER' => 'option', //默认控制器
-	'DEFAULT_FUNCTION'   => 'show', //默认方法
+	'DEFAULT_ROUTE' => 'auto', //默认路由
+
+	'ROUTE' => array(
+		'auto'  =>  '@hello',
+		),
+
+	'ARGS_ROUTE' => array(
+		//test
+		'user/:args' => '@User',
+		'wtf/:s/:m'=>'@User',
+		),
 	);
